@@ -122,7 +122,7 @@ def sram_traffic(
                     )
 
                 total_MAC += rows_this_fold * cols_this_fold
-                util_this_fold = (rows_this_fold * cols_this_fold) /(dimension_rows * dimension_cols)
+                util_this_fold = (rows_this_fold * cols_this_fold) /(2 * dimension_rows * dimension_cols)
 
                 rem_h -= rows_this_fold
                 cycles = max(cycles_f, cycles_o)
