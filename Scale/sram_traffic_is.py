@@ -187,7 +187,7 @@ def sram_traffic(
                 tmp_util += row_used * col_used
                 rem -= col_used
 
-            util_this_fold = tmp_util / (dimension_rows * dimension_cols)
+            util_this_fold = tmp_util / (2 * dimension_rows * dimension_cols)
 
             del_cycl = cycles - prev_cycl
             util += util_this_fold * del_cycl
